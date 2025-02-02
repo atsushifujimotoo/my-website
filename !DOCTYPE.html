@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>お洒落なランディングページ</title>
+  <!-- 外部CSSファイルの読み込み -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ヘッダー：ナビゲーションとヒーローセクション -->
+  <header>
+    <!-- ナビゲーションメニュー -->
+    <nav>
+      <ul>
+        <li><a href="#hero">ホーム</a></li>
+        <li><a href="#about">私たちについて</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <!-- ヒーローセクション -->
+    <div class="hero" id="hero">
+      <!-- Placehold.jpの無料素材を利用 -->
+      <img src="http://placehold.jp/1500x500.png?text=Hero+Image" alt="Hero Image">
+      <div class="hero-text">
+        <h1>魅力的なタイトル</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. (サンプルテキスト)</p>
+        <!-- CTAボタン。クリックでモーダルウィンドウを表示 -->
+        <button id="cta-button">今すぐ始める</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <!-- 「私たちについて」セクション -->
+    <section id="about">
+      <div class="container">
+        <h2>私たちについて</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. (サンプルテキスト)</p>
+        <img src="http://placehold.jp/600x400.png?text=About+Us" alt="About Image">
+      </div>
+    </section>
+
+    <!-- 「サービス」セクション -->
+    <section id="services">
+      <div class="container">
+        <h2>サービス</h2>
+        <div class="service-items">
+          <!-- サービス1 -->
+          <div class="service-item">
+            <img src="http://placehold.jp/300x200.png?text=Service+1" alt="Service 1">
+            <h3>サービス1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <!-- サービス2 -->
+          <div class="service-item">
+            <img src="http://placehold.jp/300x200.png?text=Service+2" alt="Service 2">
+            <h3>サービス2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <!-- サービス3 -->
+          <div class="service-item">
+            <img src="http://placehold.jp/300x200.png?text=Service+3" alt="Service 3">
+            <h3>サービス3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 「お問い合わせ」セクション -->
+    <section id="contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <form id="contact-form">
+          <div>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit">送信</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- モーダルウィンドウ（CTAボタン押下時に表示） -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <!-- 閉じるボタン -->
+      <span class="close-button">&times;</span>
+      <h2>お申し込みフォーム</h2>
+      <form id="modal-form">
+        <div>
+          <label for="modal-name">お名前</label>
+          <input type="text" id="modal-name" name="modal-name" required>
+        </div>
+        <div>
+          <label for="modal-email">メールアドレス</label>
+          <input type="email" id="modal-email" name="modal-email" required>
+        </div>
+        <button type="submit">申し込む</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 お洒落なLP. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 外部Javascriptファイルの読み込み -->
+  <script src="script.js"></script>
+</body>
+</html>
